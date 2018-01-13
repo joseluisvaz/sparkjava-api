@@ -1,9 +1,9 @@
-import static spark.Spark.*;
+import users.controllers.UsersController;
 
 public class Main {
 
   public static void main(String[] args) {
-    get("/hello/:name", (request, response) -> "Hello " + request.params(":name"));
-  }
 
+    UsersController.greetUser();
+  }
 }
