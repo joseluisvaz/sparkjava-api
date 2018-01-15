@@ -1,9 +1,9 @@
-import users.controllers.UsersController;
+import controllers.UsersController;
 
 public class Main {
 
   public static void main(String[] args) {
 
-    UsersController.greetUser();
+    new UsersController();
   }
 }
